@@ -59,7 +59,7 @@ public class LoginController {
 
                     // Escribir la cadena JSON en un archivo
                     File sessionFile = new File(
-                            "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\session.json");
+                            "src\\main\\java\\com\\example\\sistemadeventas\\data\\session.json");
                     FileWriter fileWriter = new FileWriter(sessionFile);
                     fileWriter.write(sessionJson);
                     fileWriter.close();
@@ -104,8 +104,8 @@ public class LoginController {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             File jsonFile = new File(
-                    "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\clientes.json"); // Ruta al
-                                                                                                             // archivo
+                    "src\\main\\java\\com\\example\\sistemadeventas\\data\\clientes.json"); // Ruta al
+                                                                                            // archivo
             // JSON de
             // clientes
             if (jsonFile.exists()) {

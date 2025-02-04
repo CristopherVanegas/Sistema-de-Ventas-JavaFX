@@ -220,7 +220,7 @@ public class AdminProductManagerController {
     @FXML
     private void handleLogout() {
         try {
-            File sessionFile = new File("sistemadeventas/src/main/java/com/example/sistemadeventas/data/session.json");
+            File sessionFile = new File("src/main/java/com/example/sistemadeventas/data/session.json");
             if (sessionFile.exists()) {
                 sessionFile.delete();
                 System.out.println("Sesión y carrito cerrados correctamente.");

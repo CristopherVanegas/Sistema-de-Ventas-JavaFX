@@ -284,8 +284,8 @@ public class PaginaCompraProductosController {
     private void handleLogout() {
         try {
             File carritoFile = new File(
-                    "sistemadeventas/src/main/java/com/example/sistemadeventas/data/carrito-detalle-pedido.json");
-            File sessionFile = new File("sistemadeventas/src/main/java/com/example/sistemadeventas/data/session.json");
+                    "src/main/java/com/example/sistemadeventas/data/carrito-detalle-pedido.json");
+            File sessionFile = new File("src/main/java/com/example/sistemadeventas/data/session.json");
             if (sessionFile.exists() && carritoFile.exists()) {
                 carritoFile.delete();
                 sessionFile.delete();

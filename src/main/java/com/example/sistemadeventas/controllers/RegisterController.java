@@ -50,9 +50,9 @@ public class RegisterController {
     private List<ClienteMinorista> listaMinoristas = new ArrayList<>();
     private List<ClienteMayorista> listaMayoristas = new ArrayList<>();
 
-    private static final String CLIENTES_JSON_PATH = "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\clientes.json";
-    private static final String MAYORISTAS_JSON_PATH = "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\mayoristas.json";
-    private static final String MINORISTAS_JSON_PATH = "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\minoristas.json";
+    private static final String CLIENTES_JSON_PATH = "src\\main\\java\\com\\example\\sistemadeventas\\data\\clientes.json";
+    private static final String MAYORISTAS_JSON_PATH = "src\\main\\java\\com\\example\\sistemadeventas\\data\\mayoristas.json";
+    private static final String MINORISTAS_JSON_PATH = "src\\main\\java\\com\\example\\sistemadeventas\\data\\minoristas.json";
 
     private JsonManagerController ClientesJsonManagerController = new JsonManagerController(CLIENTES_JSON_PATH);
     private JsonManagerController MayoristasJsonManagerController = new JsonManagerController(MAYORISTAS_JSON_PATH);
@@ -105,7 +105,6 @@ public class RegisterController {
                 MinoristasJsonManagerController.guardarMinoristas(listaMinoristas);
             }
 
-            
             System.out.println("Cliente registrado con éxito");
 
             // Cambiar a la vista de inicio de sesión

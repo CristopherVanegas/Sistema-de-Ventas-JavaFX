@@ -12,12 +12,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductAndCategoryJSONController {
-    private static final String CLIENTES_JSON_PATH = "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\clientes.json";
-    private static final String CATEGORIAS_JSON_PATH = "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\categorias.json";
-    private static final String PRODUCTOS_JSON_PATH = "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\productos.json";
-    private static final String PEDIDOS_JSON_PATH = "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\pedidos.json";
-    private static final String DETALLE_PEDIDO_JSON_PATH = "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\carrito-detalle-pedido.json";
-    private static final String SESSION_JSON_PATH = "sistemadeventas\\src\\main\\java\\com\\example\\sistemadeventas\\data\\session.json";
+    private static final String CLIENTES_JSON_PATH = "src\\main\\java\\com\\example\\sistemadeventas\\data\\clientes.json";
+    private static final String CATEGORIAS_JSON_PATH = "src\\main\\java\\com\\example\\sistemadeventas\\data\\categorias.json";
+    private static final String PRODUCTOS_JSON_PATH = "src\\main\\java\\com\\example\\sistemadeventas\\data\\productos.json";
+    private static final String PEDIDOS_JSON_PATH = "src\\main\\java\\com\\example\\sistemadeventas\\data\\pedidos.json";
+    private static final String DETALLE_PEDIDO_JSON_PATH = "src\\main\\java\\com\\example\\sistemadeventas\\data\\carrito-detalle-pedido.json";
+    private static final String SESSION_JSON_PATH = "src\\main\\java\\com\\example\\sistemadeventas\\data\\session.json";
 
     public static SessionData cargarSessionDataDesdeJSON() {
         // Crear un ObjectMapper para deserializar el JSON
